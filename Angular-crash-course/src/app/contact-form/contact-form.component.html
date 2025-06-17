@@ -1,0 +1,17 @@
+<div class="contact-form-wrapper">
+  <form class="contact-form" (ngSubmit)="onSubmit()">
+    <input type="text" [(ngModel)]="name" name="name" placeholder="Your Name" />
+    <input type="email" [(ngModel)]="email" name="email" placeholder="Your Email" />
+    <textarea [(ngModel)]="message" name="message" placeholder="Message"></textarea>
+    <button type="submit" class="button">Send</button>
+  </form>
+
+  <div *ngIf="name || email || message">
+    <p>You're typing something!</p>
+  </div>
+  
+  <h3>Submitted Names</h3>
+  <ul>
+    <li *ngFor="let submittedName of submittedNames">{{ submittedName }}</li>
+  </ul>
+</div>

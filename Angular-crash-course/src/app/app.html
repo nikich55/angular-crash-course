@@ -1,0 +1,80 @@
+<header class="header">
+  <h1>Cat's Music</h1>
+</header>
+
+<nav class="navbar">
+  <a href="#"><strong>Home</strong></a>
+  <a href="#"><strong>About</strong></a>
+  <a href="#"><strong>Services</strong></a>
+  <a href="#"><strong>Contact</strong></a>
+</nav>
+
+<div class="personal-info-wrapper">
+  <app-profile-card 
+  [imageSrc]="'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/960px-Cat_November_2010-1a.jpg'">
+  </app-profile-card>
+
+  <app-contact-form></app-contact-form>
+</div>
+
+<div class="pricing-wrapper">
+  <h2>Monthly subscriptions</h2>
+  <div class="pricing-cards-container">
+    <div class="pricing-card">
+      <h3>Solo</h3>
+      <p>$5/month</p>
+      <p>Benefits</p>
+      <ul>
+        <li>1 user</li>
+        <li>Play songs offline</li>
+        <li>Unlimited skips</li>
+      </ul>
+    </div>
+    <div class="pricing-card">
+      <h3>Duo</h3>
+      <p>$10/month</p>
+      <p>Benefits</p>
+      <ul>
+        <li>5 users</li>
+        <li>Everything in Solo</li>
+      </ul>
+    </div>
+    <div class="pricing-card">
+      <h3>Family</h3>
+      <p>$20/month</p>
+      <p>Benefits</p>
+      <ul>
+        <li>10 users</li>
+        <li>Everything in Solo</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="login-wrapper">
+  <div class="login">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button class="button">Login</button>
+  </div>
+</div>
+
+<div class="gallery">
+  <img src="https://cdn.pixabay.com/photo/2024/02/28/07/42/european-shorthair-8601492_640.jpg" alt="Image 1">
+  <img src="https://media.istockphoto.com/id/508030340/photo/sunny-cat.jpg?s=612x612&w=0&k=20&c=qkz-Mf32sbJnefRxpB7Fwpcxbp1fozYtJxbQoKvSeGM=" alt="Image 2">
+  <img src="https://media.4-paws.org/d/2/5/f/d25ff020556e4b5eae747c55576f3b50886c0b90/cut%20cat%20serhio%2002-1813x1811-720x719.jpg" alt="Image 3">
+  <img src="https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg" alt="Image 4">
+</div>
+
+<div class="newsletter">
+  <h2>Subscribe to our newsletter</h2>
+  <input type="email" placeholder="Enter your email">
+  <button class="button">Subscribe</button>
+</div>
+
+<footer class="footer">
+  <div>About</div>
+  <div>Contacts</div>
+  <div>Links</div>
+</footer>

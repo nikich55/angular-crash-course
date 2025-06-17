@@ -8,19 +8,12 @@
   text-align: center;
 }
 .personal-info-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 30px;
-  padding: 40px;
-  margin: 20px;
-}
-.profile-card {
-  max-width: 300px;
+  display: flex;
+  gap: 40px;         
+  justify-content: center; 
+  align-items: flex-start; 
+  flex-wrap: wrap;     
   padding: 20px;
-  border-radius: 50px;
-  background-color: #fff;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .navbar {
   display: flex;
@@ -32,35 +25,6 @@
 .navbar a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-}
-.contact-form-wrapper {
-  max-width: 200px; 
-  margin: 20px ;       
-  padding: 20px; 
-  border-radius: 10px;       
-  display: flex;             
-  flex-direction: column;             
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  margin: auto;
-}
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.contact-form button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  cursor: pointer;
 }
 .pricing-wrapper{
   display: flex;
